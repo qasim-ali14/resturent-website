@@ -11,8 +11,7 @@
 }
 html{
     font-size: 16px;
-     width: 100%;
-     height: 100%;
+     
      scroll-behavior: smooth;
 }
 .heading{
@@ -20,6 +19,7 @@ html{
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    background-color: #eaeef2;
     padding: 1rem 2rem;
     top:0;
     right:0;
@@ -39,14 +39,14 @@ html{
 }
 
 .navbar a{
-    color: black;
+    color: rgb(67, 95, 91);
  font-size: 1.5rem;
  padding:  0.2rem 0.6rem ;
  border-radius: 0.5rem;
 }
 .navbar a.active,
 .navbar a:hover{
-    background-color: rgb(4, 38, 38);
+    background-color: rgb(13, 159, 159);
     color: antiquewhite;
 
 }
@@ -72,14 +72,231 @@ html{
 .icons #menubar{
     display: none;
 }
+section{
+    padding: 3rem;
+    margin-top: 3.3rem;
+}
+img{
+    width: 30rem;
+    height: 30rem;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 0.2rem;
+    padding: 4rem;
+    }
+/* .image{
+    margin-left: 2rem;
+} */
+.special{
+    font-size: 2.5rem;
+    color: aqua;
+    font-weight: bold;
+    
+
+} 
+.content h2{
+    font-size: 4rem;
+    ;
+}
+.content .btn{
+    padding: 0.3rem;
+    display: inline-block;
+    width: 12rem;
+    font-size: 1.7rem;
+    color: aliceblue;
+    background-color: rgb(54, 74, 74);
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+ /* dishes section start */
+.containor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1rem;
+    margin: 0rem 4rem 0rem 4rem;
+
+}
+.box{
+    
+    padding: 1rem;
+    text-align: center;
+    box-shadow: rgb(210, 188, 210);
+    background-color: aliceblue;
+
+
+}
+#bo{
+    width: 14rem;
+    height: 10rem;
+}
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem;;
+ color: green;
+}
+.head{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;;
+    color: black;
+}
+.btnn{
+    padding: 0.2rem;
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.4rem;
+    color: rgb(247, 248, 249);
+    background-color: rgb(22, 160, 160);
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+.btnn a{
+    color: aliceblue;
+}
+.fa-bars{
+    margin-right: 16rem;
+}
+.fa-bars,.fa-search{
+    background-color: rgb(99, 113, 113);
+    border-radius: 1.2rem;
+    padding: 0.4rem;
+}
+.fa-bars:hover,
+.fa-search:hover{
+    background-color: green;
+    color: white;
+}
+/* dishes section end */
+/* about section */
+.about{
+    
+    background-color: azure;
+    box-shadow: 2rem;
+    margin-top: 6rem ;
+}
+.wrap{
+
+    display: flex;
+    align-items: center;
+
+}
+.about .wrap .content p{
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 0rem 0.3rem;
+
+}
+.about .wrap .content h2{
+ font-size: 2rem;
+}
+.imag{
+
+ width: 40rem;
+ height: 30rem;
+
+
+}
+.icons-containor{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0rem 0.3rem ;
+   
+}
+.about .wrap .content .icons-containor .icons{
+
+    border: 0.2rem solid rebeccapurple;
+    background-color: #eee;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 1rem;
+    padding: 0.3rem 2.3rem;
+}
+/* section of menu start */
+.box{
+    border: 0.1rem solid brown;
+}
+#boo{
+    width: 21rem;
+    height: 15rem;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.8rem;
+
+}
+
+.menubar{
+    position: relative;
+    top: 1.7rem;
+    left: 16.7rem;
+    width: 2rem;
+
+}
+.menubar .fa-heart{
+   background-color: #eee;
+    border: 0.1rem solid darkorchid;
+    border-radius: 0.1rem;
+}
+.menubar .fa-heart:hover{
+    background-color: green;
+    color: white; 
 
 
 
+/* form section start */
+.section-form {
+    margin-top: 20px;
+    border:2rem solid saddlebrown ;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
 
-
-
-
-
+/* form section end  */
 
 
 
@@ -113,6 +330,10 @@ html{
     .heading{
         padding: 1rem 1rem;
     }
+    #bo{
+        height: auto;
+        width: 100%;
+    }
 }
 @media (max-width:720px){
  .icons #menubar{
@@ -136,6 +357,10 @@ html{
     padding: 1rem 2rem;
 
 }
+#bo{
+    height: auto;
+    width: 100%;
+}
 
 }
 @media (max-width:790px){
@@ -148,4 +373,29 @@ html{
     .heading{
         padding: 1rem 1rem;
     }
+    #bo{
+        height: auto;
+        width: 100%;
+    }
 }
+@media (max-width:500px){
+    html{
+        font-size: 14px;
+         width: 100%;
+         height: 100%;
+         scroll-behavior: smooth;
+    }
+    .heading{
+        padding: 1rem 1rem;
+    }
+    /* .containor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(34rem,1fr));
+        gap: 1rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }*/
+    #bo{
+        height: auto;
+        width: 100%;
+    } 
+}}
